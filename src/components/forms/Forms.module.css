@@ -1,0 +1,34 @@
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid goldenrod;
+  outline: transparent;
+}
+
+.input:hover {
+  border-color: gold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn {
+  background-color: blanchedalmond;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: gold;
+  color: crimson;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

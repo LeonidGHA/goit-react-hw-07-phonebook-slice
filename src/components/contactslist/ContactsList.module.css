@@ -1,0 +1,33 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.listBtn {
+  margin-left: 20px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.listBtn:hover,
+.listBtn:focus {
+  scale: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
