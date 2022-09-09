@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 
 import { getContacts, postContact, deleteContact } from './items-operations';
 
-const items = createReducer([], {
+const itemsList = createReducer([], {
   [getContacts.fulfilled]: (_, { payload }) => payload,
   [postContact.fulfilled]: (state, { payload }) => [...state, payload],
 
@@ -25,4 +25,4 @@ const isLoading = createReducer(false, {
   [deleteContact.fulfilled]: () => false,
 });
 
-export default combineReducers({ items, isLoading });
+export default combineReducers({ itemsList, isLoading });
